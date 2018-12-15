@@ -1,0 +1,12 @@
+.edit-post-visual-editor .editor-block-list__block {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: none;
+}
+.green_block {
+  color: #faf8d6;
+}
+.green_block p {
+    font-size: 16px;
+    margin: 0 0 15px
+}

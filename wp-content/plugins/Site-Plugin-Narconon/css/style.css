@@ -1,0 +1,82 @@
+.social-icons {
+    text-align: right;
+    float: right;
+    width: 239px;
+  
+}
+.social-icons li {
+    display:inline-block;
+    list-style-type:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+}
+.social-icons li a {
+    border-bottom: none;
+}
+.social-icons li img {
+    width:30px;
+
+    margin-right: 0;
+}
+.banner-floater.phone {
+    font-size: 25px !important;
+    margin-top: -5px;
+    color: #BD831A;
+    font-weight: bold;
+  text-decoration: none;
+  
+}
+.banner-floater {
+    float: right;
+}
+.small-call {
+    font-size: 15px;
+    margin-right: 3px;
+}
+.available-24hours {
+    color: #959595;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 3px;
+}
+.michroma {
+    font-family: 'Michroma','Armata','Ubuntu',Arial,Verdana,sans-serif;
+}
+.banner-floater.get-help-link {
+    max-width: 190px;
+    line-height: 1.2;
+    margin-top: 19px;
+    margin-right: 5px;
+    text-align: center;
+    transform: translate3d(0, -50%, 0);
+    color: #959595;
+    text-decoration: none;
+}
+.get-help-link {
+    padding: 0px 0px 0 0;
+}
+.double-bracket-after:after {
+    position: relative;
+    content: " \276f";
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+.social_phone_widget {
+
+    margin: 0;
+    width: 560px;
+
+}
+@media only screen and (max-width: 1320px) {
+  
+  	.get-help-link {
+      display:none;
+  }
+  .social_phone_widget {
+    width: 360px !important;
+  }
+      
+}  

@@ -1,0 +1,11 @@
+
+This version of the Michroma font was originally downloaded from Google fonts but has been customized using Font Forge.
+So far the edits are:
+* nbsp was changed to have the same width as a regular space (was empty before)
+* upsidedown question mark (0xBF) fixed so it's the right character (was a regular question mark before)
+
+If you need to make edits, edit the micrhoma.sfd file and save out the ttf, otf, svg and woff versions (using the "Generate Fonts" option in Font Forge) and use an online converter
+to make the woff2 and eot versions, e.g.:
+https://everythingfonts.com/woff-to-woff2
+https://everythingfonts.com/woff-to-eot
+
