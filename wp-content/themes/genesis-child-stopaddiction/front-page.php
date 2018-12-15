@@ -28,7 +28,6 @@ function be_site_inner_attr( $attributes ) {
 // Displays Header.
 get_header();
 ?>
-This Worked
 <div class="green_block aligncenter light_green">
 	<div class="wrap">
 
