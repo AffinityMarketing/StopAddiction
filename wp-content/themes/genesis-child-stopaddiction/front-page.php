@@ -28,9 +28,10 @@ function be_site_inner_attr( $attributes ) {
 // Displays Header.
 get_header();
 ?>
+This Worked
 <div class="green_block aligncenter light_green">
 	<div class="wrap">
-		
+
 			<div class="green_top_title clearfix"><h2 class="green_title">What Can You Do to Stop Addiction?</h2></div>
 			<div class="one-third first"><img src="/wp-content/themes/genesis-child-stopaddiction/images/info_graphic.png"/>
 			<h4>Get Informed</h4>
@@ -44,7 +45,7 @@ get_header();
 			<h4>Get Involved</h4>
 			<p>The bet way to stop addiction is to fight back. Find out how you can get involved.</p>
 			</div>
-	
+
 	</div>
 </div>
 <div class="green_block aligncenter">
@@ -84,7 +85,7 @@ get_header();
 			</div>
 			<div class="one-half">
 			<img src="http://nnmockup.wpengine.com/wp-content/uploads/2018/09/stories-1.png"/>
-			
+
 			</div>
 		</div>
 	</div>
