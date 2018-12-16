@@ -221,7 +221,7 @@ function genesis_sample_remove_customizer_settings( $config ) {
 }
 
 // Displays custom logo.
-//add_action( 'genesis_site_title', 'the_custom_logo', 0 );
+add_action( 'genesis_site_title', 'the_custom_logo', 0 );
 
 // Repositions primary navigation menu.
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
@@ -264,7 +264,7 @@ function genesis_sample_secondary_menu_args( $args ) {
 // Add footer menu just above footer widget area
 //add_action( 'genesis_before_footer', 'amethyst_footer_menu', 9 );
 function amethyst_footer_menu() {
-  
+
 	genesis_nav_menu( array(
 		'theme_location' => 'footer',
 		'container'       => 'div',
@@ -279,16 +279,16 @@ add_filter( 'genesis_attr_nav-footer', 'custom_add_nav_footer_attr' );
 function custom_add_nav_footer_attr( $attributes ){
 	 // add role
     $attributes['role'] = 'navigation';
-        
+
     // add itemscope
     $attributes['itemscope'] = 'itemscope';
-    
+
     // add the site navigation schema
     $attributes['itemtype'] = 'http://schema.org/SiteNavigationElement';
-    
+
     // return the attributes
     return $attributes;
-        
+
 }
 
 add_filter( 'genesis_author_box_gravatar_size', 'genesis_sample_author_box_gravatar' );
@@ -337,7 +337,7 @@ function genesis_child_do_header() {
 		'open'    => '<div %s>',
 		'context' => 'title-area',
 	) );
-  
+
   genesis_markup( array(
 		'open'    => '<div %s>',
 		'context' => 'logoblock',
@@ -396,8 +396,8 @@ function genesis_child_do_header() {
 
 // Add Home Page Slider Widget Area
 //Add in new Widget areas
-function narconon_extra_widgets() {	
-	
+function narconon_extra_widgets() {
+
 	genesis_register_sidebar( array(
 	'id'            => 'slider',
 	'name'          => __( 'Slider', 'genesischild' ),
@@ -469,7 +469,7 @@ function create_custom_post_type() {
     'rewrite' => array('slug' => 'slides'),
   	'taxonomies' => array( 'category'),
 	'supports'  => array( 'title', 'editor', 'thumbnail' , 'custom-fields', 'excerpt' )
-	
+
     );
 
   register_post_type( 'slides', $args);
@@ -478,7 +478,7 @@ function create_custom_post_type() {
 add_image_size( 'hero-image', 4608, 3456, true ); // creates a hero image size
 function feature_image_header() {
 if( is_singular('Homepage Slides') && has_post_thumbnail()) {
- 
+
     genesis_image(
     array(
         'size' => 'hero-image',
@@ -486,7 +486,7 @@ if( is_singular('Homepage Slides') && has_post_thumbnail()) {
         ) );
         }
 }
- 
+
 add_action('genesis_after_post_title', 'feature_image_header');
 
 add_action( 'wp_print_styles', 'my_deregister_styles', 100 );
@@ -532,9 +532,9 @@ add_action( 'genesis_before_header', 'utility_bar' );
 * @license GPL-2.0+
 */
 function utility_bar() {
- 
+
 	echo '<div class="utility-bar fixed">';
- 
+
   	  genesis_markup( array(
 		'open'    => '<div %s>',
 		'context' => 'logoblockmobile',
@@ -558,18 +558,18 @@ function utility_bar() {
 		'close'    => '</div>',
 		'context' => 'logoblockmobile',
 		) );
- 
+
     genesis_do_subnav();
-  
-  echo '<div class="bar_phone" style="display:none;">'; 
-  
+
+  echo '<div class="bar_phone" style="display:none;">';
+
   dynamic_sidebar( 'header-right' );
- 
+
   echo '</div></div><div class="clearfix"></div>';
     echo '<script>jQuery(document).ready(function() { var topOfOthDiv = jQuery(".site-header").offset().top;jQuery(window).scroll(function() {if(jQuery(window).scrollTop() > topOfOthDiv) {jQuery(".bar_phone").show(200);}if(jQuery(window).scrollTop() < topOfOthDiv) { //scrolled past the other div?
             jQuery(".bar_phone").hide(200); //reached the desired point -- show div
         }});});</script>';
- 
+
 }
 add_action( 'genesis_before_footer', 'before_footer_widget_area', 5 );
 function before_footer_widget_area() {
@@ -581,7 +581,7 @@ function before_footer_widget_area() {
 		<span class="pre-footer-link pre-footer-link-logo">
 			<a class="nn-logo" href="/">
 
-    
+
     <svg class="logo-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="197.16px" height="51.613px" viewBox="0 0 197.16 51.613" enable-background="new 0 0 197.16 51.613" xml:space="preserve">
 
     <g id="nn_logo_green">
@@ -686,10 +686,10 @@ function before_footer_widget_area() {
 		</span>
 
 		<span class="pre-footer-link pre-footer-link-address" itemscope="" itemtype="http://schema.org/Organization" itemid="https://www.narconon.org/">
-		
+
 			<span itemprop="name"><strong>Narconon International</strong></span>
 			<a href="https://www.google.com/maps/place/Narconon+Drug+%26+Alcohol+Rehab+Centers/@34.1019893,-118.3439101,15z/data=!4m5!3m4!1s0x0:0xe9a8e6dff37b1ad5!8m2!3d34.1019893!4d-118.3439101"><span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><address><span itemprop="streetAddress">7065 Hollywood Blvd</span>, <span itemprop="addressLocality">Los Angeles</span>, <span itemprop="addressRegion">CA</span> <span itemprop="postalCode">90028</span>, <span itemprop="addressRegion">United States</span></address></span></a>
-		
+
 		</span>
 
 		<span class="pre-footer-link pre-footer-share">
@@ -699,7 +699,7 @@ function before_footer_widget_area() {
 	</div>
 	</div>
 	';
- 
+
 }
 // Remove site footer.
 remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
@@ -716,25 +716,25 @@ function sp_custom_footer() { ?>
 
 			<div><a href="/tmnotice.html">© 2018
 
-				
-				<span itemprop="name">Narconon International</span>. 
-				
+
+				<span itemprop="name">Narconon International</span>.
+
 
 				All Rights Reserved.</a> &nbsp;•&nbsp; <a href="/online-privacy-notice.html">Online Privacy Notice</a> &nbsp;•&nbsp; <a href="/terms-of-use.html">Terms of Use</a> &nbsp;•&nbsp; <a href="/notice-of-privacy-practices.html">Notice of Privacy Practices</a> &nbsp;•&nbsp; <a href="/disclaimer.html">Disclaimer: Individual results are not guaranteed and may&nbsp;vary.</a> <br>&nbsp;</div>
 
-    		
 
-				
+
+
 
 			<div class="copyright-end-line">Narconon and the Narconon logo are trademarks and service marks owned by the Association for Better Living and Education International and are used with its permission.</div>
 		</div>
 
 
-		
+
 
 
 		<!-- cookie notice here if applicable -->
-		
+
 
 
 
