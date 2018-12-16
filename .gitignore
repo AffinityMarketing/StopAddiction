@@ -16,6 +16,7 @@ wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
 wp-content/cache/*
 wp-content/cache/supercache/*
+SStopAddiction/*
 
 # wpengine specific
 .smushit-status
@@ -67,6 +68,7 @@ wp-content/mysql.sql
 /wp-content/themes/twentyfifteen
 /wp-content/themes/twentysixteen
 /wp-content/themes/twentyseventeen
+/wp-content/themes/twentynineteen
 /wp-content/themes/index.php
 /wp-content/plugins/index.php
 /wp-content/plugins/akismet*
@@ -105,3 +107,11 @@ wp-content/mysql.sql
 *.asf
 *.wmv
 *.avi
+StopAddiction/
+wp-content/.sync/ID
+wp-content/.sync/IgnoreList
+wp-content/.sync/root_acl_entry
+wp-content/.sync/StreamsList
+wp-content/plugins/hello.php
+.git.zip
+.gitattributes
