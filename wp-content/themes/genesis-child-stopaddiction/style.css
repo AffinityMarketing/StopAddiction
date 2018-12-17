@@ -1608,6 +1608,9 @@ p.entry-meta {
 	line-height: 1.5;
 }
 
+.sidebar a {
+	color: black;
+}
 .sidebar .widget {
 	margin-bottom: 40px;
 }
@@ -2295,6 +2298,10 @@ address {
 		float: none;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.content a {
+		color: black;
 	}
 
 	/* Sidebar
