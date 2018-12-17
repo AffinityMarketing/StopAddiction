@@ -2159,6 +2159,7 @@ address {
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         width: 100%;
         max-width: 1280px;
+				height: 300px;
         padding: 10px 20px;
         left: 0 !important; /* comment this out to have mega menu's left edge in line with the hovered menu item*/
     }
