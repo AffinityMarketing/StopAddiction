@@ -4,6 +4,8 @@ Plugin Name: Site Plugin Narconon Sites
 Description: Site specific code changes for Narconon Sites
 */
 /* Start Adding Functions Below this Line */
+//Disable File Editor in theme
+define('DISALLOW_FILE_EDIT', true);
 
 // prevent direct access
 defined( 'ABSPATH' ) || exit;
@@ -325,8 +327,7 @@ $yawp_wim->hook();
 $yawp_wim_walker = new YAWP_WIM_Walker();
 $yawp_wim_walker->hook();
 
-//Disable File Editor in theme
-define('DISALLOW_FILE_EDIT', true);
+
 
 // Adds support for editor color palette.
 add_theme_support( 'editor-color-palette', array(
